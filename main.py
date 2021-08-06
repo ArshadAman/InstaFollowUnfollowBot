@@ -25,7 +25,7 @@ def _follow():
     target_followers = bot.get_user_followers(target)
 
     #Follow target followers
-    for user in range(target_followers):
+    for user in range(len(target_followers)):
         bot.follow(target_followers[user])
 
 def _unfollow():
